@@ -1,40 +1,43 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Videogame Trivia</title>
-    
-    <link rel="stylesheet" href="quiz.css">
-    <link rel="stylesheet" href="normalize.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videogame Quiz</title>
+
+  <link rel="stylesheet" href="quiz.css">
+  <link rel="stylesheet" href="normalize.css">
 </head>
 
 <body>
- <main role="main">
-  
-   <section id="start-quiz" role="start">
-     <header role="banner"> Are you a Videogame Guru?</header>
-     <button id="start" class="start-button" type="button">Game On!</button>
-   </section>
-  
-   <section class="quiz-questions" role="questions">
-    <h1 class="questionTitle"></h1>
-        <div class="choices"></div>
-        <div class="results">
-            <button id="submitUserGuess">Results</button>
-        </div>
-        <div class="feedback"></div>
-        <h2 class="answeredCorrectly"></h2>
-        <div class="questionNumber"></div>
-        <button id="nextQuestion">Next Question</button>
-   </section>
-    
-  <section id="quiz-results" role="results">
-  <button id="startOver">Restart</button>
-  </section>
-  <img class="starone" src="/i.imgur.com/0ipWa6Fr.png">
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
-          <script src="quiz.js"></script>
+  <main role="main">
+
+    <section id="start-quiz" role="start">
+      <header role="banner"> Are you a Videogame Guru?</header>
+      <button id="start" class="start-button" type="button">Press Start!</button>
+    </section>
+
+    <section class="quiz-questions" role="questions">
+      <h1 class="questionTitle"></h1>
+      <div class="choices"></div>
+      <div class="results">
+        <button id="submitUserGuess">Results</button>
+      </div>
+      <div class="feedback"></div>
+      <h2 class="answeredCorrectly"></h2>
+      <div class="questionNumber"></div>
+      <button id="nextQuestion">Next Question</button>
+    </section>
+
+    <section id="quiz-results" role="results">
+      <button id="startOver">Start Over</button>
+    </section>
+    <img class="starone" src="/i.imgur.com/0ipWa6F.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="quiz.js"></script>
   </main>
 </body>
+
 </html>
