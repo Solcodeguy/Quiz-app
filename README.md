@@ -5,7 +5,9 @@ The requirements for the app are:
 User experience requirements
 
 The starting screen should have a button that users can click to start the quiz.
+
 Users should be prompted through a series of at least 5 multiple choice questions that they can answer.
+
 Users should be asked questions 1 after the other.
 Users should only be prompted with 1 question at a time.
 Users should not be able to skip questions.
