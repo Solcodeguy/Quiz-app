@@ -145,8 +145,9 @@ $("#nextQuestion").on("click", function() {
             $("#start-quiz").show();
             $('.quiz-questions').hide();
             $("#nextQuestion").hide();
-            $("#quiz-results").hide();
+            $("#quiz-results").empty();
             state.currentQuestionIndex = 0
+            $(".questionNumber").html(state.questions[state.currentQuestionIndex].quesNum + " out of 5");
        });
         
                
