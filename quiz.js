@@ -25,12 +25,12 @@ questions:[
  correctAns: 2009},
  
 
- {title: "In Super Mario Bros,What does mario jump on to complete each level?",
+ {title: "In Super Mario Bros, what does Mario jump on to complete each level?",
  choices: ["a Flag Pole","His Glasses","a Mushroom","all of the above"],
  quesNum: 2,
  correctAns: "a Flag Pole"},
 
- {title: "what is the maximum amount of controllers supported by PS3?",
+ {title: "What is the maximum amount of controllers supported by PS3?",
  choices: ["4","7","11","8"],
  quesNum: 3,
  correctAns: "7"},
