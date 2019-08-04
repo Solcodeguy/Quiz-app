@@ -31,22 +31,22 @@ h1, header{
     color: white;
     font-size: 55px;
     text-align: center;
-    height: 125px;
+    
     
     
 }
 
 #start {
     display: block;
-    height: 150px;
-    width: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     border-radius: 30%;
     border: 1px solid red;
-    font-size: 50px;
+    font-size: 25px;
     border: 10px solid rgba(216, 200, 200, 0.158) ;
     background-color: #b794c5;
     color: white;
-    font-size: 25;
+    font-size: 20;
     float: center;
     margin: 0 auto;
     }
@@ -62,9 +62,10 @@ h1, header{
 
 .answer-one {
     background-color: lightgrey;
-    width: 15%;
+    width: 75%;
     height: 100px;
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
     float: left;
     border: 5px solid white;
     margin-top: 0px;
@@ -78,9 +79,10 @@ h1, header{
 
 
 .choices {
-    text-align: center;
-    font-size: 48px;
-    border-top: 15px solid grey; 
+    font-size: 30px;
+    border-top: 15px solid grey;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .results {
@@ -116,7 +118,7 @@ h1, header{
 .feedback {
     color: white;
     text-align: center;
-    font-size: 24px;
+    font-size: 25px;
      
 }
 
@@ -177,7 +179,7 @@ h1, header{
     }
     
     .starone{
-        position: relative;
+        position: fixed;
         height: 150px
         
     }
@@ -275,7 +277,7 @@ h1, header{
     }
     
     .starone {
-        position: relative;
+        position: fixed;
     }
     .choices {
         width: 700px;
