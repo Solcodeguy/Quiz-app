@@ -40,7 +40,7 @@ questions:[
  quesNum: 4,
  correctAns: "Nintendo Entertainment Systems"},
     
- {title: "How Many Halo titles contain the main storyline?",
+ {title: "How many Halo titles contain the main storyline?",
  choices: ["7","9","5","4"],
  quesNum: 5,
  correctAns: "5"},
