@@ -80,6 +80,7 @@ h1, header{
 
 .choices {
     font-size: 30px;
+    margin: auto;
     border-top: 15px solid grey;
     display: flex;
     flex-wrap: wrap;
