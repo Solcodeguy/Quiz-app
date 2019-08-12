@@ -85,7 +85,7 @@ h1, header{
     font-size: 30px;
     margin: auto;
     border-top: 15px solid grey;
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap;
 }
 
