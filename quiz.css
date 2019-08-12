@@ -6,6 +6,9 @@
     box-sizing: border-box;
     
 }
+.quiz-questions { 
+  text-align: center;
+}
 
  body {
   background-color: #6c278b; 
