@@ -6,7 +6,8 @@
     box-sizing: border-box;
     
 }
-.quiz-questions { 
+
+.quiz-questions{ 
   text-align: center;
 }
 
@@ -66,7 +67,7 @@ h1, header{
 .answer-one {
     background-color: lightgrey;
     width: 75%;
-    height: 100px;
+    height: 10%;
     display: flex;
     flex-wrap: wrap;
     float: left;
@@ -83,7 +84,6 @@ h1, header{
 
 .choices {
     font-size: 30px;
-    margin: auto;
     border-top: 15px solid grey;
     display: inline-block;
     flex-wrap: wrap;
@@ -95,13 +95,13 @@ h1, header{
 
 #submitUserGuess {
    width: 40%;
-   font-size: 30px;
+   font-size: 35px;
    margin-left: 30%;
    margin-right: 30%;
    margin-top: 30px;
    cursor: pointer;
    border-radius: 15px;
-   box-shadow: 0 9px #999;
+    box-shadow: 0 9px #999;
    
 }
 
@@ -122,7 +122,7 @@ h1, header{
 .feedback {
     color: white;
     text-align: center;
-    font-size: 25px;
+    font-size: 16px;
      
 }
 
@@ -159,7 +159,7 @@ h1, header{
 #quiz-results {
     color: white;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 
@@ -183,7 +183,7 @@ h1, header{
     }
     
     .starone{
-        position: fixed;
+        position: relative;
         height: 150px
         
     }
@@ -324,7 +324,7 @@ h1, header{
             font-size: 2em;
         }
         .questionNumber{}
-            font-size: 4em;
+            font-size: 2em;
         )
         
 }
