@@ -11,16 +11,16 @@
 
 <body>
 
-    <section id="start-quiz"><h4>Click press start to begin</h4>
-      <header > Are you a Videogame Guru?</header>
+    <section id="start-quiz"><h3>Click press start to begin</h3>
+      <header role="banner"> Are you a Videogame Guru?</header>
       <button id="start" class="start-button" type="button">Press Start!</button>
     </section>
 
-    <section class="quiz-questions"><h3>riddle me this..</h3>
+    <section class="quiz-questions" role="questions">
       <h1 class="questionTitle"></h1>
       <div class="choices"></div>
       <div class="results">
-        <button id="submitUserGuess">Continue</button>
+        <button id="submitUserGuess">Submit</button>
       </div>
       <div class="feedback"></div>
       <h2 class="answeredCorrectly"></h2>
@@ -28,7 +28,7 @@
       <button id="nextQuestion">Next</button>
     </section>
 
-  <section id="quiz-results"><h1>Final Score</h1>
+    <section id="quiz-results"><h1>Final Score</h1>
       <button id="startOver">Start Over</button>
     </section>
     
