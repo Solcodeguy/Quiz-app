@@ -20,13 +20,13 @@ questions:[
  quesNum: 1,
  correctAns: 2009},
  
-
- {title: "In Super Mario Bros,What does mario jump on to complete each level?",
+// user will select answer from radio button 
+ {title: "In Super Mario Bros,What does Mario jump on to complete each level?",
  choices: ["a Flag Pole","His Glasses","a Mushroom","all of the above"],
  quesNum: 2,
  correctAns: "a Flag Pole"},
 
- {title: "what is the maximum amount of controllers supported by PS3?",
+ {title: "What is the maximum amount of controllers supported by PS3?",
  choices: ["4","7","11","8"],
  quesNum: 3,
  correctAns: "7"},
@@ -36,7 +36,7 @@ questions:[
  quesNum: 4,
  correctAns: "Nintendo Entertainment Systems"},
     
- {title: "How Many Halo titles contain the main storyline?",
+ {title: "How many Halo titles contain the main storyline?",
  choices: ["7","9","5","4"],
  quesNum: 5,
  correctAns: "5"},
@@ -73,7 +73,8 @@ function renderQuestion(){
     }); 
 };
 
- // this will listen for when user selects answer and clicks submits  
+// event listener will listen for when user selects answer and clicks submits and update index property so 
+// if answer is correct details on answer will return 
 $("#submitUserGuess").on("click",function() {
    
     let checkedAnswer=$('input[name=radio]:checked').val();
@@ -138,6 +139,8 @@ $("#nextQuestion").on("click", function() {
         $("#quiz-results").show();
        
 
+// startover - user will see how well he or she did and have option to start over question user can submit to finish quiz and will bring up new layout with quiz results
+
         $("#startOver").on("click", function() {
             $("#start-quiz").show();
             $('.quiz-questions').hide();
@@ -156,10 +159,6 @@ $("#nextQuestion").on("click", function() {
 }); 
     
      
-// user will select answer from radio button 
-//have event listener and update index property so it 
-
-// if answer is correct details on answer will return
 
 
 
@@ -176,11 +175,3 @@ $("#nextQuestion").on("click", function() {
 
 
 // on last question user can submit to finish quiz and will bring up new layout with quiz results
-
-
-
-// results pages- user will see how well he or she did and have option to start overst question user can submit to finish quiz and will bring up new layout with quiz results
-
-
-
-// results pages- user will see how well he or she did and have option to start over
