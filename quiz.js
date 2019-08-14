@@ -1,16 +1,12 @@
 // render quiz app ??
-
 $(document).ready(function(){
     $('.quiz-questions').hide();
     $("#nextQuestion").hide();
-    $("#quiz-results").hide();
-   
-   
+    $("#quiz-results").hide(); 
+      
 });
 
-
 // when user clicks submit button new layout with all questions will show 
-
 
 
 // store questions and answers
@@ -25,12 +21,12 @@ questions:[
  correctAns: 2009},
  
 
- {title: "In Super Mario Bros, what does Mario jump on to complete each level?",
+ {title: "In Super Mario Bros,What does mario jump on to complete each level?",
  choices: ["a Flag Pole","His Glasses","a Mushroom","all of the above"],
  quesNum: 2,
  correctAns: "a Flag Pole"},
 
- {title: "What is the maximum amount of controllers supported by PS3?",
+ {title: "what is the maximum amount of controllers supported by PS3?",
  choices: ["4","7","11","8"],
  quesNum: 3,
  correctAns: "7"},
@@ -40,7 +36,7 @@ questions:[
  quesNum: 4,
  correctAns: "Nintendo Entertainment Systems"},
     
- {title: "How many Halo titles contain the main storyline?",
+ {title: "How Many Halo titles contain the main storyline?",
  choices: ["7","9","5","4"],
  quesNum: 5,
  correctAns: "5"},
@@ -54,7 +50,6 @@ $("#start").on("click", function (){
     $("#start-quiz").hide();
     $(".quiz-questions").show();
     
-
     renderQuestion();
 
 });
@@ -107,6 +102,8 @@ $("#submitUserGuess").on("click",function() {
       }
     
     else {
+        let question= state.questions[state.currentQuestionIndex];
+        console.log(state.currentQuestionIndex);
         alert("Please Select An Answer");
     }
     
@@ -126,7 +123,7 @@ $("#nextQuestion").on("click", function() {
    else {
     $('.quiz-questions').hide();
     $("#nextQuestion").hide();
-         $("#quiz-results").append(`<div id="quiz-results">
+         $("#quiz-results").append(`<div>
                                     <h1> Quiz Results</h1>
                                     <h2> You Got </h2>
                                     ${state.correctAnswers}
@@ -140,13 +137,15 @@ $("#nextQuestion").on("click", function() {
        }
         $("#quiz-results").show();
        
-       
+
         $("#startOver").on("click", function() {
             $("#start-quiz").show();
             $('.quiz-questions').hide();
             $("#nextQuestion").hide();
-            $("#quiz-results").empty();
+            $("#quiz-results").hide();
+            state.correctAnswers = 0
             state.currentQuestionIndex = 0
+            $(".answeredCorrectly").html("");
             $(".questionNumber").html(state.questions[state.currentQuestionIndex].quesNum + " out of 5");
        });
         
@@ -177,6 +176,10 @@ $("#nextQuestion").on("click", function() {
 
 
 // on last question user can submit to finish quiz and will bring up new layout with quiz results
+
+
+
+// results pages- user will see how well he or she did and have option to start overst question user can submit to finish quiz and will bring up new layout with quiz results
 
 
 
