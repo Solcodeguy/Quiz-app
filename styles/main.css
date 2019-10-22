@@ -1,0 +1,188 @@
+                                                                    /************* main page ************/
+                                                                    
+                                                                    * {
+                                                                        box-sizing: border-box;
+                                                                        font-family: 'Roboto', sans-serif;
+                                                                    }
+                                                                    
+                                                                    main {
+                                                                        background-color: lightsteelblue;
+                                                                        min-width: 320px;
+                                                                        max-width: 1600px;
+                                                                        min-height: 320px;
+                                                                        max-height: 960px;
+                                                                        margin: 0 auto;
+                                                                    }
+                                                                    
+                                                                    p {
+                                                                        max-width: 600px;
+                                                                        max-height: 600px;
+                                                                    }
+                                                                    
+                                                                    .container {
+                                                                        padding: 0 90px;
+                                                                        padding-top: 90px;
+                                                                        background-color: rgb(131, 131, 228);
+                                                                    }
+                                                                    
+                                                                    .user-was-correct::before {
+                                                                        content: "WOW! (";
+                                                                        font-size: 30px;
+                                                                        padding: 0 90px;
+                                                                        margin-bottom: 0 auto;
+                                                                    }
+                                                                    
+                                                                    .user-was-correct::after {
+                                                                        content: ")";
+                                                                        font-size: 30px;
+                                                                        padding: 0 90px;
+                                                                        margin-bottom: 0 auto;
+                                                                    }
+                                                                    
+                                                                    .user-was-incorrect {
+                                                                        font-size: 50px;
+                                                                        color: rgb(153, 0, 255);
+                                                                    }
+                                                                    /************* Responsive************/
+                                                                    
+                                                                    @media all and (min-width: 320px)and {
+                                                                        header {
+                                                                            font-size: 3em;
+                                                                        }
+                                                                        .container {
+                                                                            position: relative;
+                                                                        }
+                                                                        .user-was-correct::after {
+                                                                            font-size: 1em;
+                                                                            padding: 0;
+                                                                        }
+                                                                        .main {
+                                                                            font-size: 6em;
+                                                                            min-width: 1em;
+                                                                            max-width: 1em;
+                                                                            min-height: 1em;
+                                                                            max-height: 2.875em;
+                                                                        }
+                                                                    }
+                                                                }
+                                                                @media all and (min-width: 400px) {
+                                                                    header {
+                                                                        font-size: 2.5em;
+                                                                    }
+                                                                    
+                                                                    .container {
+                                                                        margin: 10%;
+                                                                        margin-left: 25%;
+                                                                        width: 50%;
+                                                                    }
+                                                                    
+                                                                    .answer-one {
+                                                                        margin: 8%
+                                                                    }
+                                                                    
+                                                                    .feedback {
+                                                                        margin: 40px
+                                                                    }
+                                                                    
+                                                                    .questionNumber {
+                                                                        font-size: 2em;
+                                                                    }
+                                                                }
+                                                                @media all and (min-width: 768px) {
+                                                                    .questionTitle {
+                                                                        font-size: 3em
+                                                                    }
+                                                                    
+                                                                    header {
+                                                                        font-size: 5em;
+                                                                    }
+                                                                    
+                                                                    #start {
+                                                                        height: 350px;
+                                                                        margin-top: 30%;
+                                                                    }
+                                                                    
+                                                                    .answer-one {
+                                                                        height: 200px;
+                                                                        width: 200px;
+                                                                        font-size: 40px;
+                                                                        margin-left: 12%;
+                                                                    }
+                                                                    
+                                                                    .feedback {
+                                                                        display: block;
+                                                                        text-align: center;
+                                                                    }
+                                                                    
+                                                                    .questionNumber {
+                                                                        font-size: 2em;
+                                                                    }
+                                                                    
+                                                                    .starone {
+                                                                        position: fixed;
+                                                                    }
+                                                                    
+                                                                    .choices {
+                                                                        width: 700px;
+                                                                        margin: ;
+                                                                        font-size: 1.5 em;
+                                                                    }
+                                                                }
+                                                                @media all and (min-width: 1024px) {
+                                                                    header {
+                                                                        font-size: 8em;
+                                                                    }
+                                                                    
+                                                                    #start {
+                                                                        height: 500px;
+                                                                        margin-top: 350px;
+                                                                    }
+                                                                    
+                                                                    .choices {
+                                                                        width: 900px;
+                                                                        margin: 5%;
+                                                                    }
+                                                                    
+                                                                    .answer-one {
+                                                                        height: 225px;
+                                                                        width: 225px;
+                                                                        font-size: 1em;
+                                                                        margin: 0;
+                                                                    }
+                                                                    
+                                                                    .feedback {
+                                                                        display: block;
+                                                                        text-align: center;
+                                                                        font-size: 3em;
+                                                                    }
+                                                                    
+                                                                    .answeredCorrectly {
+                                                                        font-size: 2em;
+                                                                    }
+                                                                    
+                                                                    .questionNumber {}
+                                                                    
+                                                                    font-size: 2em;
+                                                                    )
+                                                                }
+                                                                @media all and (min-width: 1600px) {
+                                                                    header {
+                                                                        font-size: 5.5em;
+                                                                    }
+                                                                    
+                                                                    .container {
+                                                                        width: 1500px;
+                                                                        margin: 5%;
+                                                                        margin-top: 0;
+                                                                        ;
+                                                                    }
+                                                                    
+                                                                    .answer-one {
+                                                                        height: 125px;
+                                                                        width: 325px;
+                                                                        font-size: .5em;
+                                                                        padding: 2%;
+                                                                        margin: 25px;
+                                                                    }
+                                                                    
+                                                                    .questionTitle
