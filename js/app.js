@@ -22,7 +22,7 @@ var state = {
         },
         {
             text: "How many Halo titles contain the main storyline?",
-            choices: ["5", "7", "9", "5"],
+            choices: ["5", "7", "9", "10"],
             correctChoiceIndex: 0,
         }
     ],
@@ -36,7 +36,7 @@ var state = {
     admonishments: [
         "LOL, I'm laughing because thats the wrong answer, not because you got it wrong!",
         "Sorry, maybe you should try coloring, its safer.",
-        "That's incorrect. If you think your dissapointed, imagine being the one grading it."
+        "That's incorrect. If you think your disappointed, imagine being the one grading it."
     ],
     score: 0,
     currentQuestionIndex: 0,
