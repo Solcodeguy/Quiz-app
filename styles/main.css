@@ -20,8 +20,8 @@
         }
         
         .container {
-            padding: 0 90px;
-            padding-top: 90px;
+            /* padding: 0 90px; */
+            /* padding-top: 90px; */
             background-color: rgb(131, 131, 228);
         }
         
@@ -48,9 +48,6 @@
         @media all and (min-width: 320px)and {
             header {
                 font-size: 3em;
-            }
-            .container {
-                position: relative;
             }
             .user-was-correct::after {
                 font-size: 1em;
@@ -160,10 +157,9 @@
             font-size: 2em;
         }
         
-        .questionNumber {}
-        
-        font-size: 2em;
-        )
+        .questionNumber {
+            font-size: 2em;
+        }
     }
     @media all and (min-width: 1600px) {
         header {
@@ -171,10 +167,9 @@
         }
         
         .container {
-            width: 1500px;
+            /* width: 1500px; */
             margin: 5%;
             margin-top: 0;
-            ;
         }
         
         .answer-one {
