@@ -1,234 +1,240 @@
-                                    * {
-                                    box-sizing: border-box;
-                                    font-family: 'Roboto', sans-serif;
-                                }
-                                
-                                main {
-                                    background-color: lightsteelblue;
-                                    padding-top: inherit;
-                                    height: -webkit-fill-available;
-                                    /* min-width: 320px; */
-                                    max-width: 1200px;
-                                    min-height: 320px;
-                                    max-height: 960px;
-                                    margin: 5px auto;
-                                }
-                                
-                                form {
-                                    text-align: center;
-                                }
-                                
-                                p {
-                                    text-align: center;
-                                }
-                                
-                                h1 {
-                                    text-align: center;
-                                }
-                                
-                                body {
-                                    margin: 0;
-                                    text-align: -webkit-auto;
-                                    max-width: 600px;
-                                    max-height: 600px;
-                                    line-height: 2;
-                                    background-color: aliceblue;
-                                }
-                                
-                                .container {
-                                    /* padding: 0 90px; */
-                                    /* padding-top: 90px; */
-                                    height: 100vh;
-                                    width: auto;
-                                    height: auto;
-                                    padding: 10px;
-                                    background-color: rgb(131, 131, 228);
-                                }
-                                
-                                .user-was-correct::before {
-                                    content: "WOW! (";
-                                    font-size: 30px;
-                                    /* padding: 0 90px; */
-                                    margin-bottom: 0 auto;
-                                }
-                                
-                                .user-was-correct::after {
-                                    content: ")";
-                                    font-size: 30px;
-                                    /* padding: 0 90px; */
-                                    margin-bottom: 0 auto;
-                                }
-                                
-                                .user-was-incorrect {
-                                    font-size: 30px;
-                                    color: rgb(153, 0, 255);
-                                }
-                                /************* Responsive************/
-                                
-                                @media only screen and (min-width: 400px)and {
-                                    body {
-                                        margin: 0;
-                                        text-align: -webkit-auto;
-                                        max-width: 400px;
-                                        max-height: 400px;
-                                        line-height: 1;
-                                        background-color: aliceblue;
-                                    }
-                                    h1 {
-                                        text-align: center;
-                                    }
-                                    form {
-                                        display: flex;
-                                    }
-                                    p {
-                                        font-size: 1em;
-                                        height: auto;
-                                    }
-                                    main {
-                                        height: 10px;
-                                        background-color: lightsteelblue;
-                                        padding: 10px;
-                                        max-width: 320px;
-                                        max-height: 300px;
-                                        margin: 10px auto;
-                                    }
-                                    .container {
-                                        padding: 0 90px;
-                                        padding-top: 90px;
-                                        height: 100vh;
-                                        background-color: rgb(131, 131, 228);
-                                    }
-                                    .user-was-correct::before {
-                                        content: "WOW! (";
-                                        font-size: 30px;
-                                        /* padding: 0 90px; */
-                                        margin-bottom: 0 auto;
-                                    }
-                                    .user-was-correct::after {
-                                        content: ")";
-                                        font-size: 30px;
-                                        /* padding: 0 90px; */
-                                        margin-bottom: 0 auto;
-                                    }
-                                    .user-was-incorrect {
-                                        font-size: 30px;
-                                        color: rgb(153, 0, 255);
-                                    }
-                                    header {
-                                        font-size: 1em;
-                                    }
-                                    .user-was-correct::after {
-                                        font-size: 1em;
-                                        padding: 0;
-                                    }
-                                    .start-page {
-                                        display: block;
-                                        flex-direction: row;
-                                        max-width: 320px;
-                                        max-height: 320px;
-                                    }
-                                    .main {
-                                        display: flex;
-                                        font-size: 1em;
-                                    }
-                                }
-                                
-                                @media all and (min-width: 600px) {
-                                    header {
-                                        font-size: 2.5em;
-                                    }
-                                    .container {
-                                        margin: 10%;
-                                        margin-left: 25%;
-                                        width: 50%;
-                                    }
-                                    .answer-one {
-                                        margin: 8%
-                                    }
-                                    .feedback {
-                                        margin: 40px
-                                    }
-                                    .questionNumber {
-                                        font-size: 2em;
-                                    }
-                                }
-                                
-                                @media all and (min-width: 768px) {
-                                    .questionTitle {
-                                        font-size: 3em
-                                    }
-                                    header {
-                                        font-size: 5em;
-                                    }
-                                    #start {
-                                        height: 350px;
-                                        margin-top: 30%;
-                                    }
-                                    .answer-one {
-                                        height: 200px;
-                                        width: 200px;
-                                        font-size: 40px;
-                                        margin-left: 12%;
-                                    }
-                                    .feedback {
-                                        display: block;
-                                        text-align: center;
-                                    }
-                                    .questionNumber {
-                                        font-size: 2em;
-                                    }
-                                    .choices {
-                                        width: 700px;
-                                        margin: ;
-                                        font-size: 1.5 em;
-                                    }
-                                }
-                                
-                                @media all and (min-width: 1024px) {
-                                    header {
-                                        font-size: 8em;
-                                    }
-                                    #start {
-                                        height: 500px;
-                                        margin-top: 350px;
-                                    }
-                                    .choices {
-                                        width: 900px;
-                                        margin: 5%;
-                                    }
-                                    .answer-one {
-                                        height: 225px;
-                                        width: 225px;
-                                        font-size: 1em;
-                                        margin: 0;
-                                    }
-                                    .feedback {
-                                        display: block;
-                                        text-align: center;
-                                        font-size: 3em;
-                                    }
-                                    .answeredCorrectly {
-                                        font-size: 2em;
-                                    }
-                                    .questionNumber {
-                                        font-size: 2em;
-                                    }
-                                }
-                                
-                                @media all and (max-width: 1200px) {
-                                    header {
-                                        font-size: 5.5em;
-                                    }
-                                    .container {
-                                        /* width: 1500px; */
-                                        margin: 5%;
-                                        margin-top: 0;
-                                    }
-                                    .answer-one {
-                                        height: 125px;
-                                        width: 325px;
-                                        font-size: .5em;
-                                        padding: 2%;
-                                        margin: 25px;
-                                    }
-                                    .questionTitle
+                    * {
+                    box-sizing: border-box;
+                    font-family: 'Roboto', sans-serif;
+                }
+                
+                main {
+                    background-color: lightsteelblue;
+                    padding-top: inherit;
+                    height: -webkit-fill-available;
+                    /* min-width: 320px; */
+                    max-width: 960px;
+                    min-height: 320px;
+                    max-height: 960px;
+                    margin: 5px auto;
+                }
+                
+                form {
+                    text-align: center;
+                }
+                
+                p {
+                    text-align: center;
+                }
+                
+                h1 {
+                    text-align: center;
+                }
+                
+                h3 {
+                    text-align: center;
+                }
+                
+                body {
+                    margin: 0;
+                    text-align: -webkit-auto;
+                    max-width: 600px;
+                    max-height: 600px;
+                    line-height: 2;
+                    background-color: aliceblue;
+                }
+                
+                .container {
+                    /* padding: 0 90px; */
+                    /* padding-top: 90px; */
+                    height: 100vh;
+                    width: auto;
+                    height: auto;
+                    padding: 10px;
+                    background-color: rgb(131, 131, 228);
+                }
+                
+                .user-was-correct::before {
+                    text-align: center;
+                    content: "WOW! (";
+                    font-size: 30px;
+                    /* padding: 0 90px; */
+                    margin-bottom: 0 auto;
+                }
+                
+                .user-was-correct::after {
+                    text-align: center;
+                    content: ")";
+                    font-size: 30px;
+                    /* padding: 0 90px; */
+                    margin-bottom: 0 auto;
+                }
+                
+                .user-was-incorrect {
+                    font-size: 30px;
+                    color: rgb(153, 0, 255);
+                }
+                /************* Responsive************/
+                
+                @media only screen and (min-width: 400px)and {
+                    body {
+                        margin: 0;
+                        text-align: -webkit-auto;
+                        max-width: 400px;
+                        max-height: 400px;
+                        line-height: 1;
+                        background-color: aliceblue;
+                    }
+                    h1 {
+                        text-align: center;
+                    }
+                    form {
+                        display: flex;
+                    }
+                    p {
+                        font-size: 1em;
+                        height: auto;
+                    }
+                    main {
+                        height: 10px;
+                        background-color: lightsteelblue;
+                        padding: 10px;
+                        max-width: 320px;
+                        max-height: 300px;
+                        margin: 10px auto;
+                    }
+                    .container {
+                        padding: 0 90px;
+                        padding-top: 90px;
+                        height: 100vh;
+                        background-color: rgb(131, 131, 228);
+                    }
+                    .user-was-correct::before {
+                        content: "WOW! (";
+                        font-size: 30px;
+                        /* padding: 0 90px; */
+                        margin-bottom: 0 auto;
+                    }
+                    .user-was-correct::after {
+                        content: ")";
+                        font-size: 30px;
+                        /* padding: 0 90px; */
+                        margin-bottom: 0 auto;
+                    }
+                    .user-was-incorrect {
+                        font-size: 30px;
+                        color: rgb(153, 0, 255);
+                    }
+                    header {
+                        font-size: 1em;
+                    }
+                    .user-was-correct::after {
+                        font-size: 1em;
+                        padding: 0;
+                    }
+                    .start-page {
+                        display: block;
+                        flex-direction: row;
+                        max-width: 320px;
+                        max-height: 320px;
+                    }
+                    .main {
+                        display: flex;
+                        font-size: 1em;
+                    }
+                }
+                
+                @media all and (min-width: 600px) {
+                    header {
+                        font-size: 2.5em;
+                    }
+                    .container {
+                        margin: 10%;
+                        margin-left: 25%;
+                        width: 50%;
+                    }
+                    .answer-one {
+                        margin: 8%
+                    }
+                    .feedback {
+                        margin: 40px
+                    }
+                    .questionNumber {
+                        font-size: 2em;
+                    }
+                }
+                
+                @media all and (min-width: 768px) {
+                    .questionTitle {
+                        font-size: 3em
+                    }
+                    header {
+                        font-size: 5em;
+                    }
+                    #start {
+                        height: 350px;
+                        margin-top: 30%;
+                    }
+                    .answer-one {
+                        height: 200px;
+                        width: 200px;
+                        font-size: 40px;
+                        margin-left: 12%;
+                    }
+                    .feedback {
+                        display: block;
+                        text-align: center;
+                    }
+                    .questionNumber {
+                        font-size: 2em;
+                    }
+                    .choices {
+                        width: 700px;
+                        margin: ;
+                        font-size: 1.5 em;
+                    }
+                }
+                
+                @media all and (min-width: 1024px) {
+                    header {
+                        font-size: 8em;
+                    }
+                    #start {
+                        height: 500px;
+                        margin-top: 350px;
+                    }
+                    .choices {
+                        width: 900px;
+                        margin: 5%;
+                    }
+                    .answer-one {
+                        height: 225px;
+                        width: 225px;
+                        font-size: 1em;
+                        margin: 0;
+                    }
+                    .feedback {
+                        display: block;
+                        text-align: center;
+                        font-size: 3em;
+                    }
+                    .answeredCorrectly {
+                        font-size: 2em;
+                    }
+                    .questionNumber {
+                        font-size: 2em;
+                    }
+                }
+                
+                @media all and (max-width: 1200px) {
+                    header {
+                        font-size: 5.5em;
+                    }
+                    .container {
+                        /* width: 1500px; */
+                        margin: 5%;
+                        margin-top: 0;
+                    }
+                    .answer-one {
+                        height: 125px;
+                        width: 325px;
+                        font-size: .5em;
+                        padding: 2%;
+                        margin: 25px;
+                    }
+                    .questionTitle
