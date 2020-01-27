@@ -159,7 +159,7 @@ function renderAnswerFeedbackText(state, element) {
 
 function renderNextButtonText(state, element) {
     var text = state.currentQuestionIndex < state.questions.length - 1 ?
-        "Next" : "How did I do?";
+        "Continue" : "Results";
     element.text(text);
 };
 
